@@ -11,7 +11,8 @@ print(funif_1a(Neiz_chislo = int (input("введите число от 0 до 1
 
 
 # 1б
-def funif_10b(a, Neiz_chislo = 0, chislo = 36, N=0):
+def funif_10b(Neiz_chislo = 0, chislo = 36, N=0):
+    a = input("Партия? Введите Yes/No:\n")
     for i in range(1, len(a)): # количество символов в ответе
         if len(a) == 3:  # проверка желания играть
             Neiz_chislo = 0
@@ -29,12 +30,13 @@ def funif_10b(a, Neiz_chislo = 0, chislo = 36, N=0):
             break
     return N
 
-Kol_partii = funif_10b(a = input("Партия? Введите Yes/No:\n"))
+Kol_partii = funif_10b()
 print("Количество партий:", Kol_partii)
 
 
 # 1в
-def funif_10c(a, Neiz_chislo = 0, chislo = 36, N=0, hod = 50):
+def funif_10c(Neiz_chislo = 0, chislo = 36, N=0, hod = 50):
+    a = input("Партия? Введите Yes/No:\n")
     for i in range(1, len(a)): # количество символов в ответе
         if len(a) == 3:  # проверка желания играть
             Neiz_chislo = 0
@@ -60,7 +62,7 @@ def funif_10c(a, Neiz_chislo = 0, chislo = 36, N=0, hod = 50):
             break
     return N
 
-Kol_partii = funif_10c(a = input("Партия? Введите Yes/No:\n"))
+Kol_partii = funif_10c()
 print("Количество партий:", Kol_partii)
 
 
