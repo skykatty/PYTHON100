@@ -39,7 +39,12 @@ funnum_4([1, 2, 3, 4, 5, 2, 3, 4, 5, 6])
 
 
 # 5.
-def funnum_5(zn5):
-    zn5_len= len(zn5)/3 # выбор трети чисел
-    print(round(zn5_len)) # на печать результат округления
-funnum_5([1, 2, 3, 4, 5, 2, 3, 4, 5, 6])
+def funnum_5():
+    list=[1, 2, 3, 4, 5, 2, 3, 4, 5, 6]
+    New_list = []
+    for i in list:
+        a = round(i/3)
+        New_list.append(a)
+    print(New_list)
+funnum_5()
+
